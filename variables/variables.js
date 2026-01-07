@@ -82,14 +82,17 @@
 
 
 
-a=29
-b=95
+// a=29
+// b=95
 
-x=a 
-a=b 
-b=x 
-document.writeln(a)
-document.writeln(b)
+// x=a 
+// a=b 
+// b=x 
+// document.writeln(a)
+// document.writeln(b)
+
+
+
 
 
 
