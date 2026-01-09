@@ -66,9 +66,35 @@
 
     // 2. or (||) : when anyone conditions is true then return true . otherwise it return false  . 
 
-
     // let a=58
     // let b=58
     // document.writeln(a<b || a>b || a>=b)
+
+
+
+    // 3. not (!) : the not operators is used to reverse the condition . 
+
+    // let a=27
+    // let b=40
+    // document.writeln(!(a>b))
+
+
+
+
+    // user input : the user input is used to get/access the data from users . and the prompt function is used to user input in java script . 
+
+    // let a=prompt("enter a number")
+    // document.writeln("your number is ",a)
+
+
+
+    // Q 1 : 
+    // let a=parseInt(prompt("enter first number"))
+    // let b=parseInt(prompt("enter second number"))
+    // let sum=a+b 
+    // document.writeln("your numbers sum is ",sum)
+
+
+    
 
 
