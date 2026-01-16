@@ -172,6 +172,18 @@
 // *****
 
 
+// for(i=1;i<=5;i++){
+//         for(k=5;k>i;k--){
+//                 document.writeln("&nbsp;&nbsp;")
+//         }
+//         for(j=1;j<=i;j++){
+//                 document.writeln("*")
+//         }
+//         document.writeln("<br/>")
+// }
+
+
+
 
 // Q 7 : 
 
@@ -229,5 +241,28 @@
 
 
 
-// 12*3 : 
+
+// break : the break statment is used to jump out of the loop specify condition . 
+
+
+// a=prompt("enter a number between 1 to 10 where you stop the loop: ")
+// for(i=1;i<=10;i++){
+//         if(i==a){
+//                 break 
+//         }
+//         document.writeln(i)
+// }
+
+
+
+// continue : the continue statment is used to skip/jump out of the specify condition and  continue with the next condition . 
+
+
+// a=prompt("enter a number between 1 to 10 where you skip the loop: ")
+// for(i=1;i<=10;i++){
+//         if(i==a){
+//                 continue 
+//         }
+//         document.writeln(i)
+// }
 
