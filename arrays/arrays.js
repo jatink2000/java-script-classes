@@ -71,10 +71,10 @@
 // document.writeln(a)
 
 
-// 6. join() : the join method is used to join the arrays element by any symbol . 
+// // 6. join() : the join method is used to join the arrays element by any symbol . 
 // let a=[3,5,6,35,23]
 // let b=a.join("-")
-// document.writeln(b)
+// document.writeln(typeof b)
 
 
 // 7. concat() : 
@@ -108,9 +108,15 @@
 // 14. copywithin() : 
 // copywithin(target,copyindex)
 
-let a=[2,3,4,5,6,7,8,9]
-let b=a.copyWithin(4,0)
-document.writeln(b)
+// let a=[3,4,5,6,7,8,9]
+// let b=a.copyWithin(3,0)
+// document.writeln(b)
+
+
+// map , filter ,reduce 
+
+
+
 
 
 
