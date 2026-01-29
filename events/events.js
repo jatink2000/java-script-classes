@@ -42,28 +42,55 @@ function mouseout_event() {
         // setTimeout(function,milisecond)
 
         
+    //     function groot() {
+    //         Swal.fire({
+    //             text: "Hello Users",
+    //             icon: "success"
+    //         });
+    //     }
         
+        
+    //    let timeout= setTimeout(()=>{
+    //         groot()
+    //     },5000)
+
+
+        // 1. cleartimeout : the cleartimeout is used to stop the settimeout excuation . 
+        // syntex :
+            // clearTimeout(variable of settimeout) 
+
+            // function clear_timeout(){
+            //     clearTimeout(timeout)
+            // }
+
+
+
+
+// 2. setinterval : the setinterval is used to repeat excute the function after waiting the specify number of milisecond . 
+        // syntex :
+        // setInterval(function,milisecond)
+
+
+
         function groot() {
             Swal.fire({
                 text: "Hello Users",
                 icon: "success"
             });
         }
-        
-        
-        setTimeout(()=>{
+
+
+        let interval=setInterval(()=>{
             groot()
         },5000)
 
 
-        // 1. cleartimeout : 
+
+        // 1. clearinterval :  the clearinterval is used to stop the setinterval excuation . 
+        // syntex :
+            // clearinterval(variable of setinterval) 
 
 
-
-
-// 2. setinterval : 
-
-
-
-
-        // 1. clearinterval : 
+            function clear_interval(){
+                clearInterval(interval)
+            }
