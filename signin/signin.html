@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+
+    <style>
+        input {
+            border-bottom: 1px solid black;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            width: 100%;
+            background-color: transparent;
+            margin-bottom: 20px;
+        }
+        button{
+            padding: 10px 15px;
+            background-color: aqua;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .signup{
+            background-color: rgba(228, 227, 227, 0.791);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup">
+        <h1>Sign in</h1>
+        <label>email:</label><br>
+        <input type="email" placeholder="enter your email" id="email" /><br>
+        <label>password:</label><br>
+        <input type="password" placeholder="enter your password" id="password" /><br>
+        <button onclick="signup_users()">signup</button>
+
+        <a href="../signup/signup.html">signup</a>
+    </div>
+
+
+
+
+    <script src="./signup.js"></script>
+</body>
+
+</html>
