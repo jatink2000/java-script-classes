@@ -1,5 +1,5 @@
 
-
+// json : collection of multiple objects . 
 
 let students = [
     { "rollno": 1, "firstname": "Amit", "lastname": "Sharma", "city": "Jaipur", "course": "Python" },
@@ -54,51 +54,43 @@ let students = [
     { "rollno": 48, "firstname": "Rekha", "lastname": "Kumari", "city": "Ranchi", "course": "Java" },
     { "rollno": 49, "firstname": "Sagar", "lastname": "Nayak", "city": "Bhubaneswar", "course": "React" },
     { "rollno": 50, "firstname": "Priyanka", "lastname": "Patil", "city": "Kolhapur", "course": "Python" },
-    { "rollno": 31, "firstname": "Abhishek", "lastname": "Tripathi", "city": "Prayagraj", "course": "NodeJS" },
-    { "rollno": 32, "firstname": "Sonam", "lastname": "Rani", "city": "Patna", "course": "Python" },
-    { "rollno": 33, "firstname": "Vivek", "lastname": "Rajput", "city": "Bhopal", "course": "Java" },
-    { "rollno": 34, "firstname": "Kirti", "lastname": "Malik", "city": "Rohtak", "course": "React" },
-    { "rollno": 35, "firstname": "Ajay", "lastname": "Thakur", "city": "Shimla", "course": "Python" },
-    { "rollno": 36, "firstname": "Monika", "lastname": "Bisht", "city": "Dehradun", "course": "MongoDB" },
-    { "rollno": 37, "firstname": "Sanjay", "lastname": "Rawat", "city": "Nainital", "course": "NodeJS" },
-    { "rollno": 38, "firstname": "Pankaj", "lastname": "Kashyap", "city": "Kanpur", "course": "Java" },
-    { "rollno": 39, "firstname": "Divya", "lastname": "Shukla", "city": "Faizabad", "course": "React" },
-    { "rollno": 40, "firstname": "Rakesh", "lastname": "Chandra", "city": "Varanasi", "course": "Python" }
 ]
 
 
-let studtable=document.getElementById("studdata")
+let studenttbl=document.getElementById("studenttbl")
 
 students.map((data)=>{
 
-    // create a table row using the js: 
-   let tablerow=document.createElement("tr")
-    
+  let tablerow=document.createElement("tr")
 
-   // create a table data using the js: 
-   let rollnum=document.createElement("td")
-   rollnum.innerHTML=data.rollno
 
-   let firstname=document.createElement("td")
-   firstname.innerHTML=data.firstname
+  let rollno=document.createElement("td")
+  rollno.innerHTML=data.rollno
+
+  let firstname=document.createElement("td")
+  firstname.innerHTML=data.firstname
 
    let lastname=document.createElement("td")
-   lastname.innerHTML=data.lastname
+  lastname.innerHTML=data.lastname
+
 
    let city=document.createElement("td")
-   city.innerHTML=data.city
+  city.innerHTML=data.city
 
 
    let course=document.createElement("td")
-   course.innerHTML=data.course
+  course.innerHTML=data.course
 
-   tablerow.appendChild(rollnum)
-   tablerow.appendChild(firstname)
-   tablerow.appendChild(lastname)
-   tablerow.appendChild(city)
-   tablerow.appendChild(course)
+  tablerow.appendChild(rollno)
+  tablerow.appendChild(firstname)
+  tablerow.appendChild(lastname)
+  tablerow.appendChild(city)
+  tablerow.appendChild(course)
 
 
-   studtable.appendChild(tablerow)
+  studenttbl.appendChild(tablerow)
+
 })
+
+
 

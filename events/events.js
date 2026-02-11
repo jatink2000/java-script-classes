@@ -2,6 +2,7 @@
 
 
 // events : a javascript events are actions in the browser that you can respond to with the code . for marking the webpage interactive . 
+
 // there are two types of events : 
 // 1. html events : an html events can be used into the html attributes . some example for html events is . 
 

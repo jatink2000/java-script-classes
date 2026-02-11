@@ -17,6 +17,7 @@ function signup_users() {
     let already_uers = JSON.parse(localStorage.getItem("myusers")) || []
     // filter : 
     let filter_user=already_uers.filter(data=> data.email==emailvalue)
+
     if(filter_user.length>0){
         alert("already signup")
     }
@@ -28,13 +29,6 @@ function signup_users() {
         localStorage.setItem("myusers", JSON.stringify(already_uers))
     }
 }
-
-
-
-
-
-
-
 
 
 
