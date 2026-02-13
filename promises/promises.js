@@ -58,45 +58,58 @@
 
 
 // api fetch :  application programming  interface 
-        // json : collection of multiple objects . 
-
-async function groot(){
-    let apidata=await fetch("https://fakestoreapi.com/products") 
-    let result=await apidata.json()  
-     
+// json : collection of multiple objects .
 
 
-    let allproducts=document.getElementById("allproducts")
+// filter api :
+async function apifilter(a) {
+    let apidata = await fetch("https://fakestoreapi.com/products")
+    let result = await apidata.json()
+    let filtered_data=result.filter(item=> item.category==a)
+    
+    groot(filtered_data)
+}
+
+async function groot(filteritems) {
+    let apidata = await fetch("https://fakestoreapi.com/products")
+    let result = await apidata.json()
+
+
+
+    let allproducts = document.getElementById("allproducts")
+    allproducts.innerHTML=" "
+
     // mapping 
-    result.map((data)=>{
-        
+    filteritems.map((data) => {
+
         // create one product box : 
-        let box=document.createElement("div")
-        box.id="product"
+        let box = document.createElement("div")
+        box.id = "product"
 
 
         // image box : 
-        let imagebox=document.createElement("div")
-        imagebox.id="product_img"
+        let imagebox = document.createElement("div")
+        imagebox.id = "product_img"
 
 
         // create a img tag : 
-        let productimage=document.createElement("img")
-        productimage.src=data.image 
+        let productimage = document.createElement("img")
+        productimage.src = data.image
 
         // create a h3 tag : 
-        let producttitle=document.createElement("h3")
-        producttitle.innerHTML=data.title 
+        let producttitle = document.createElement("h3")
+        producttitle.innerHTML = data.title
 
         // create a h3 tag : 
-        let productprice=document.createElement("p")
-        productprice.innerHTML="$"+data.price 
+        let productprice = document.createElement("p")
+        productprice.innerHTML = "$" + data.price
 
 
         imagebox.appendChild(productimage)
         box.appendChild(imagebox)
         box.appendChild(producttitle)
         box.appendChild(productprice)
+
 
         allproducts.appendChild(box)
     })

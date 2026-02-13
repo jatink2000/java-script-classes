@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-        #product{
+
+        #product {
             border: 2px solid black;
             width: 24%;
             margin-bottom: 10px;
@@ -19,32 +21,63 @@
             border-radius: 10px;
         }
 
-        #product:hover{
+        #product:hover {
             box-shadow: 0px 0px 1px 1px rgb(94, 94, 94);
         }
 
-        #product_img{
+        #product_img {
             text-align: center;
         }
 
-        #allproducts{
+        #allproducts {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            margin-top: 30px;
         }
 
-        img{
+        img {
             width: 100%;
             max-width: 400px;
             height: 300px;
         }
+
+        button {
+            padding: 10px 15px;
+            text-transform: capitalize;
+            background-color: transparent;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+        }
     </style>
+
+
 </head>
+
 <body>
-    
+
+
 
     <div>
         <h1>Our Products :</h1>
+        <div class="btn">
+            <button onclick="apifilter('men\'s clothing')">men's clothing</button>
+            <button onclick="apifilter('jewelery')">jewelery</button>
+            <button onclick="apifilter('electronics')">electronics</button>
+            <button onclick="apifilter('women\'s clothing')">women's clothing</button>
+        </div>
+
+
         <div id="allproducts">
 
         </div>
@@ -52,4 +85,5 @@
 
     <script src="./promises.js"></script>
 </body>
+
 </html>
